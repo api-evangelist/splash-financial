@@ -1,0 +1,94 @@
+generated: '2026-08-05'
+method: searched
+source: live probes of the /.well-known/ surface on every Splash Financial host
+note: >-
+  No /.well-known/ document is published on any Splash Financial host. The marketing
+  host www.splashfinancial.com does publish an llms.txt at the site root (200,
+  text/plain), captured verbatim in llms/splash-financial-llms.txt. The API host
+  api.splashfinancial.com is a live AWS API Gateway that answers every unauthenticated
+  path with {"message":"Not Found"} — the host exists but exposes no discovery surface.
+  The borrower portal my.splashfinancial.com is a single-page app whose catch-all route
+  answers 200 with the same HTML shell for every path, including every /.well-known/
+  path; those 200s are NOT documents and are recorded as spa-catch-all so a later run
+  does not mistake them for hits.
+hosts:
+- host: https://www.splashfinancial.com
+  role: marketing site
+  documents:
+  - path: /llms.txt
+    status: 200
+    content_type: text/plain
+    file: ../llms/splash-financial-llms.txt
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://api.splashfinancial.com
+  role: API host (AWS API Gateway)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://my.splashfinancial.com
+  role: borrower portal (single-page app)
+  caveat: spa-catch-all
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell, not an AgentCard
+  - path: /.well-known/agent.json
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell, not an AgentCard
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell, not RFC 9116 text
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell, not OIDC discovery JSON
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell, not RFC 8414 JSON
+  - path: /.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    accepted: false
+    reason: SPA catch-all returned the app HTML shell
+security_txt: null
+api_catalog: null
+openid_configuration: null
+agent_card: null
