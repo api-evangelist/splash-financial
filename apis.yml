@@ -11,6 +11,17 @@ description: 'Splash Financial is a Cleveland, Ohio financial technology company
   unions and community banks as a partner channel, but that integration is arranged
   through a business development contact form and no public developer portal, API
   reference, or machine-readable specification is published.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.splashfinancial.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/splash-financial/refs/heads/main/apis.yml
 x-type: company
