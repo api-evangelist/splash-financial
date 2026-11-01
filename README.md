@@ -64,5 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Splash Financial is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/splash-financial_stock/
+Splash Financial is a Cleveland, Ohio financial technology company and online lending marketplace, founded in 2013, that matches consumers with loan offers from a network of partner banks and credit unions rather than lending directly itself. The platform uses automated underwriting to prequalify borrowers and present competing offers across student loan refinancing, personal loans, debt consolidation, home equity lines of credit, in-school private student loans, and medical school loan refinancing. The company reports having helped more than 125,000 people refinance over $6 billion in loans. Splash also sells its origination technology to credit unions and community banks as a partner channel, but that integration is arranged through a business development contact form and no public developer portal, API reference, or machine-readable specification is published.
+
+**Areas:** Company · Financial Services · Lending · Student Loans · Personal Loans · Marketplace · Fintech · Debt Consolidation · Home Equity
+
+## Splash Financial on APIs.io
+
+Everything profiled for Splash Financial is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/splash-financial/](https://apis.io/providers/splash-financial/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Splash Financial Domain Security](https://apis.io/security/splash-financial/splash-financial-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.splashfinancial.com/)
+- [Sign up](https://my.splashfinancial.com/)
+- [Support](https://www.splashfinancial.com/about-us/contact-us)
+- [Blog](https://www.splashfinancial.com/blog)
+- [Terms of service](https://www.splashfinancial.com/disclaimers/terms-of-use)
+- [Privacy policy](https://www.splashfinancial.com/disclaimers/online-privacy-policy)
+- [GitHub](https://github.com/splashfinancial)
+
+## API Evangelist rating
+
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/splash-financial/](https://apis.io/providers/splash-financial/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Splash Financial: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/splash-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
